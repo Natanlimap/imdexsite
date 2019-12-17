@@ -1,0 +1,73 @@
+.container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+}
+#logo{
+    border: 2px solid black;
+
+    padding: 0% 26% 0% 26%;
+}
+header{
+    display: grid;
+    grid-template-columns: 5% auto;
+
+    margin-top: 1%;
+}
+header h1 {
+   padding-left: 3%;
+   padding-top: 0.5%;
+
+   font-size: 45px;
+}
+.icones{
+    position: absolute;
+    right: 5%;
+    top: 7.1%;
+
+}
+li{
+    display: inline;
+    padding: 0.2em;
+}
+
+section{
+    margin-top: 5%;
+    border: 1px solid black;
+}
+section h1{
+    font-size: 50px;
+    padding-left: 38%;
+}
+#bigTitle >div{
+    background-image: url('/miniempresa/imdexsite/site_italo/img/bigTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    margin: 1%;
+}
+ p{
+    width: 30%;
+    margin: 5% 0% 1% 5%;
+
+    text-indent: 10px;
+
+}
+#bigTitle h1 + div{
+
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#va{
+    position: absolute;    
+    right: 15%;
+    top: 45%;
+}
+#va li{
+    padding: 2em;
+}
+#sobre h2{
+    font-size: 26px;
+    padding-left: 5%;
+}
