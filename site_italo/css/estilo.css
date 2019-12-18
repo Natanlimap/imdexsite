@@ -1,13 +1,26 @@
+body{
+    background-image: url('../img/body-background.png');
+}
+h2{
+    font-size: 26px;
+    padding-left: 5%;
+}
 .container{
     width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: auto;
+
 }
+/*HEADER*/
 #logo{
     border: 2px solid black;
 
     padding: 0% 26% 0% 26%;
+    transition: 2s;
+}
+#logo:hover{
+    background-color: rgba(0,0,0,0.5);
 }
 header{
     display: grid;
@@ -27,28 +40,32 @@ header h1 {
     top: 7.1%;
 
 }
+
 li{
     display: inline;
     padding: 0.2em;
 }
-
+/*BODY*/
 section{
     margin-top: 5%;
     border: 1px solid black;
+    overflow: hidden;
+    height: 90%;
 }
 section h1{
     font-size: 50px;
     padding-left: 38%;
 }
+/*BIG TITLE*/
 #bigTitle >div{
-    background-image: url('/miniempresa/imdexsite/site_italo/img/bigTitle.png');
+    background-image: url('/site_italo/img/bigTitle.png');
     background-repeat: no-repeat;
     background-size: 100%;
 
-    margin: 1%;
+    margin: 2%;
 }
  p{
-    width: 30%;
+    width: 50%;
     margin: 5% 0% 1% 5%;
 
     text-indent: 10px;
@@ -60,14 +77,79 @@ section h1{
     grid-template-columns: auto auto;
 }
 #va{
-    position: absolute;    
+    position: relative;    
     right: 15%;
     top: 45%;
 }
 #va li{
     padding: 2em;
 }
+/*SOBRE*/
 #sobre h2{
-    font-size: 26px;
-    padding-left: 5%;
+    
 }
+#sobre div p+ div{
+    width: 40%;
+    position: relative;
+    right: 4%;
+    bottom: 2%;
+    margin-top: -10%;
+    float: right;
+
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#sobre div p+ div img{
+    margin:auto;
+    margin-top: 3%;
+    transition: 2s;
+    margin-bottom: 3%;
+
+}
+#sobre div p+ div img:hover{
+    transform: scale(1.2) ;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+#sobre div p+ div p{
+    float: none;
+    clear: none;
+    margin: auto;
+    margin-top: 1%;
+    width: 70%;
+}
+#sobre p{
+    margin: 2% 0% auto 5%;
+    float: left;
+    clear: both;
+}
+/*CONTATOS*/
+#formPI{
+
+    border: 1px solid black;
+
+    width: 40%;
+    height: 100%;
+}
+#formPI form{
+    margin-left: 5%;
+    margin-top: 4%;
+}
+#formPI input{
+    float: left;
+    clear: both;
+    margin-bottom: 2%;
+
+    width: 50%;
+}
+#formPI #nome{
+    width: 50%;
+    clear: none;
+}
+#formPI #data{
+    width: 25%;
+    position: relative;
+    float: right;
+    right: 10%;
+    margin-top: -7%;
