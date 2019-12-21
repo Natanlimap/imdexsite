@@ -1,6 +1,6 @@
 body{
     font-family: 'Open Sans', sans-serif;
-    background-image: url('../img/background.jpg');
+    background-color: #a0dde6;
 }
 h2{
     font-size: 26px;
@@ -62,27 +62,37 @@ section{
     height: 90%;
 }
 section h1{
-    font-size: 50px;
+    font-size: 40px;
     padding-left: 38%;
 }
 /*BIG TITLE*/
 #bigTitle{
     border: none;
 }
-#bigTitle h2 + div{
-    background-color: black;
-}
+
 #bigTitle .devices{
-    width: 30%;
-    align-self: center;
+    width: 20%;
     float: left;
-    margin: auto;
+    margin: 2%;
+    margin-left: 5%;
+   
 }
 #bigTitle img{
-    width:inherit;
+    width:70%;
+    
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
 }
+#bigTitle img +p{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #bigTitle h2{
-    margin-top: 4%;
+    margin-top: 2%;
+    margin-bottom: 4%;
 }
  p{
     width: 50%;
@@ -96,13 +106,25 @@ section h1{
     display: grid;
     grid-template-columns: auto auto;
 }
-#va{
-    position: relative;    
-    right: 15%;
-    top: 45%;
+#botao{
+    
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #92afd7;
+    border-radius: 1%;
+    position: relative;
+    float: left;
+    top: 18%;
+    left: 12%;
+
+    text-decoration: none;
+    color: black;
+    transition: 1s;
 }
-#va li{
-    padding: 2em;
+#botao:hover{
+    background-color:#5a7684 ;
 }
 /*SOBRE*/
 #sobre h2{
