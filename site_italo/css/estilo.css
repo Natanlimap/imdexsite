@@ -1,5 +1,6 @@
 body{
-    background-image: url('../img/body-background.png');
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('../img/background.jpg');
 }
 h2{
     font-size: 26px;
@@ -16,31 +17,39 @@ h2{
 #logo{
     border: 2px solid black;
 
-    padding: 0% 26% 0% 26%;
+    padding: 0% 1% 0% 1%;
     transition: 2s;
 }
 #logo:hover{
     background-color: rgba(0,0,0,0.5);
 }
 header{
-    display: grid;
-    grid-template-columns: 5% auto;
-
-    margin-top: 1%;
+    background-color: #1C1C1C;
+    border-radius: 0px 0px 15px 15px;
 }
 header h1 {
-   padding-left: 3%;
-   padding-top: 0.5%;
-
-   font-size: 45px;
+    padding-left: 0%;
+    margin-top: -5%;
+    margin-left: 10%;
+    padding-bottom: 3%;
+    font-size: 45px;
+    color: white;
 }
 .icones{
-    position: absolute;
-    right: 5%;
-    top: 7.1%;
+    position: relative;
+    float: right;
+    top: -26.9%;
 
 }
-
+.excecao{
+    display:block;
+    width: 90%;
+    align-self: auto;
+}
+.excecao > img{
+    width: 7%;
+    margin-top: 1%;
+}
 li{
     display: inline;
     padding: 0.2em;
@@ -57,16 +66,27 @@ section h1{
     padding-left: 38%;
 }
 /*BIG TITLE*/
-#bigTitle >div{
-    background-image: url('/site_italo/img/bigTitle.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    margin: 2%;
+#bigTitle{
+    border: none;
+}
+#bigTitle h2 + div{
+    background-color: black;
+}
+#bigTitle .devices{
+    width: 30%;
+    align-self: center;
+    float: left;
+    margin: auto;
+}
+#bigTitle img{
+    width:inherit;
+}
+#bigTitle h2{
+    margin-top: 4%;
 }
  p{
     width: 50%;
-    margin: 5% 0% 1% 5%;
+    margin: 0% 0% 1% 5%;
 
     text-indent: 10px;
 
